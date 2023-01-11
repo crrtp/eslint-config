@@ -1,0 +1,29 @@
+{
+	"name": "@crrtp/eslint-config",
+	"version": "1.0.0",
+	"license": "MIT",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/crrtp/eslint-config.git"
+	},
+	"scripts": {
+		"lint": "eslint --fix --cache **/*.js",
+		"commit": "node ./node_modules/cz-customizable/standalone.js"
+	},
+	"dependencies": {
+		"eslint-config-standard-with-typescript": "^26.0.0",
+		"eslint-plugin-astro": "^0.21.1",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-markdown": "^3.0.0"
+	},
+	"devDependencies": {
+		"@crrtp/commit-types": "^1.0.0",
+		"cz-customizable": "^7.0.0",
+		"eslint": "^8.31.0"
+	},
+	"peerDependencies": {
+		"eslint": ">= 8.0.0"
+	},
+	"packageManager": "pnpm@7.22.0"
+}
