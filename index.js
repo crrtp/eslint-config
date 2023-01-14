@@ -3,9 +3,13 @@ module.exports = {
 		"standard-with-typescript"
 	],
 	rules: {
+		curly: ["error", "multi-or-nest", "consistent"],
 		indent: ["error", "tab"],
 		"no-tabs": ["error", { allowIndentationTabs: true }],
-		"no-unused-vars": ["error", { varsIgnorePattern: "^_[^_]?" }],
+		"no-unused-vars": ["error", {
+			varsIgnorePattern: "^_[^_]?",
+			destructuredArrayIgnorePattern: "^_[^_]?"
+		}],
 		quotes: ["error", "double"]
 	},
 	overrides: [
@@ -17,7 +21,10 @@ module.exports = {
 			},
 			rules: {
 				"@typescript-eslint/indent": ["error", "tab"],
-				"@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_[^_]?" }],
+				"@typescript-eslint/no-unused-vars": ["error", {
+					varsIgnorePattern: "^_[^_]?",
+					destructuredArrayIgnorePattern: "^_[^_]?"
+				}],
 				"@typescript-eslint/quotes": ["error", "double"],
 
 				"@typescript-eslint/no-non-null-assertion": "off"

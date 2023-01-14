@@ -24,10 +24,15 @@ module.exports = {
 
 | ルール | 変更前 (要約) | 変更後 | 理由 |
 | --- | --- | --- | --- |
+| curly | `["error", "multi-line"]` | `["error", "multi-or-nest"]`[^curly] | if文を使うときは改行したい！！ |
 | indent | `["error", 2]` | `["error", "tab"]` | 私がタブ派だから。 |
-| no-tabs | `"error"` | (インデントのタブを許可) | 同上 |
-| no-unused-vars | `"error"` | (`varsIgnorePattern`を追加) | あると便利だから。 |
+| no-tabs | `"error"` | (インデントのタブを許可[^tabs]) | 同上 |
+| no-unused-vars | `"error"` | (変数を無視するパターンを追加[^ignore]) | あると便利だから。 |
 | quotes | `["error", "single"]` | `["error", "double"]` | 私がダブルクォート派だから。 |
+
+[^curly]: 正確には `["error", "multi-or-nest", "consistent"]`
+[^tabs]: `{ allowIndentationTabs: true }`
+[^ignore]: `{ varsIgnorePattern: "^_[^_]?", destructuredArrayIgnorePattern: "^_[^_]?" }`
 
 ## ライセンス
 
