@@ -32,7 +32,7 @@ module.exports = {
 
 [^curly]: 正確には `["error", "multi-or-nest", "consistent"]`
 [^tabs]: `{ allowIndentationTabs: true }`
-[^ignore]: `{ varsIgnorePattern: "^_[^_]?", destructuredArrayIgnorePattern: "^_[^_]?" }`
+[^ignore]: `{ varsIgnorePattern: "^_[^_]?", argsIgnorePattern: "^_[^_]?", destructuredArrayIgnorePattern: "^_[^_]?" }`
 
 ## ライセンス
 

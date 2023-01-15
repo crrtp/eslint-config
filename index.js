@@ -8,6 +8,7 @@ module.exports = {
 		"no-tabs": ["error", { allowIndentationTabs: true }],
 		"no-unused-vars": ["error", {
 			varsIgnorePattern: "^_[^_]?",
+			argsIgnorePattern: "^_[^_]?",
 			destructuredArrayIgnorePattern: "^_[^_]?"
 		}],
 		quotes: ["error", "double"]
@@ -23,6 +24,7 @@ module.exports = {
 				"@typescript-eslint/indent": ["error", "tab"],
 				"@typescript-eslint/no-unused-vars": ["error", {
 					varsIgnorePattern: "^_[^_]?",
+					argsIgnorePattern: "^_[^_]?",
 					destructuredArrayIgnorePattern: "^_[^_]?"
 				}],
 				"@typescript-eslint/quotes": ["error", "double"],
